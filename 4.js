@@ -24,7 +24,7 @@ while (operator !== '+' && operator !== '-' && operator !== '*' && operator !== 
 
 }
 
-let calcResult = (num1,num2,operator) => {
+let calcResult = () => {
 
   switch (operator) {
     case '+':
