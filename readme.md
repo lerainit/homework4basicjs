@@ -20,7 +20,7 @@ return result;
 
 }
 
- let randomRectangleSquare = rectangleSquare(4,6);
+let randomRectangleSquare = rectangleSquare(4,6);
  
  console.log(randomRectangleSquare); // 24
  
