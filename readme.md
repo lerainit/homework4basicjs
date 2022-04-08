@@ -58,16 +58,25 @@ let randomRectangleSquare = rectangleSquare(4,6);
 ```
 
 Оператор return прерывает выполнение функции и возвращает результат ее выполнения в код, который ее вызвал.
+```js
+let userName = 'John';
+let lasName = 'Smith';
+let grade = 100;
 
 function showGrade(name,lastname) {
-  if ( !userName && ! lastName ) {
+  if ( name !== userName || lastname !== lastName ) {
     return;
   }
 
-  alert( `Ваша оценка за тестирование ${grade}` ); // (*)
-  // ...
+  alert( `Ваша оценка за тестирование ${grade}` ); 
+ 
 }
 
+showGrade('alex','petrov'); // на экран не будет выведено ничего так как условие истинно и срабатывает return;
+
+showGrade('John','Smith'); // в диалоговом окне выведется сообщение с оценкой потому что условие в круглых скобках ложное и return не срабатывает.
+
+```
 
 Если после return нет никаких инструкций ,то он прерывает выполнение функции и возвращается undefined ,как результат выполнения функции.
 
