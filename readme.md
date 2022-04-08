@@ -60,7 +60,7 @@ let randomRectangleSquare = rectangleSquare(4,6);
 Оператор return прерывает выполнение функции и возвращает результат ее выполнения в код, который ее вызвал.
 ```js
 let userName = 'John';
-let lasName = 'Smith';
+let lastName = 'Smith';
 let grade = 100;
 
 function showGrade(name,lastname) {
