@@ -20,7 +20,11 @@ return result;
 
 }
 
-rectangleSquare(4,6);
+ let randomRectangleSquare = rectangleSquare(4,6);
+ 
+ console.log(randomRectangleSquare); // 24
+ 
+ 
 
 // Функция принимает в себя любые значения сторон 
 // прямоугольника(это аргументы функции)
