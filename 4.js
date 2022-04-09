@@ -39,7 +39,5 @@ let calcResult = (a,b,c) => {
   }
 }
 
-
-
 console.log(calcResult(num1,num2,operator));
 
