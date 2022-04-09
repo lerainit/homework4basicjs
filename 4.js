@@ -1,7 +1,7 @@
 "use strict";
 
 
-let num1 = +prompt('Enter fitst number');
+let num1 = +prompt('Enter first number');
 
 let num2 = +prompt('Enter second number');
 
