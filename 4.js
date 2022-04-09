@@ -1,44 +1,45 @@
 "use strict";
 
 
-let num1 = +prompt('Введите первое число');
+let num1 = +prompt('Enter fitst number');
 
-let num2 = +prompt('Введите второе число');
-
-
-while (num1 === 0 || isNaN(num1) || num2 === 0 || isNaN(num2)) {
-
-  num1 = +prompt('Введите первое число', num1);
-
-  num2 = +prompt('Введите второе число', num2);
-
-}
+let num2 = +prompt('Enter second number');
 
 
-let operator = prompt('Введите какую  операцию выполнить с введеными вами числами: + ,или  - ,или * ,или / ');
+while( num1 === 0 || isNaN(num1) || num2 === 0 || isNaN(num2)){
 
+    num1 = +prompt('Enter first number',num1);
 
-while (operator !== '+' && operator !== '-' && operator !== '*' && operator !== '/') {
-
-  operator = prompt('Введите какую операцию выполнить с введеными вами числами: + ,или  - ,или * ,или / ');
+    num2 = +prompt('Enter second number',num2);
 
 }
 
-let calcResult = () => {
 
-  switch (operator) {
+let operator = prompt('Введите операцию с числами: + или  - или * или /');
+
+
+while( operator !== '+' && operator !== '-' && operator !== '*' && operator !=='/'){
+       
+    operator = prompt('Введите операцию с числами: + или  - или * или /');
+
+}
+
+let calcResult = (a,b,c) => {
+
+  switch (c) {
     case '+':
-      return num1 + num2;
+      return a + b;
     case '-':
-      return num1 - num2;
+      return a - b;
     case '*':
-      return num1 * num2;
+      return a * b;
     case '/':
-      return num1 / num2;
-
+      return a / b;
+   
   }
 }
 
-console.log(calcResult());
 
+
+console.log(calcResult(num1,num2,operator));
 
